@@ -14,9 +14,9 @@ import seaborn as sns
 
 # Load Dataframe
 def load_data():
-    aotizhongxin_dt = pd.read_csv('/content/aotizhongxin_df.csv')
-    changping_dt = pd.read_csv('/content/changping_df.csv')
-    dingling_dt = pd.read_csv('/content/dingling_df.csv')
+    aotizhongxin_dt = pd.read_csv('Dataframe/PRSA_Data_Aotizhongxin_20130301-20170228.csv')
+    changping_dt = pd.read_csv('Dataframe/PRSA_Data_Changping_20130301-20170228.csv')
+    dingling_dt = pd.read_csv('Dataframe/PRSA_Data_Dingling_20130301-20170228.csv')
     aotizhongxin_dt['date'] = pd.to_datetime(aotizhongxin_dt[['year', 'month', 'day', 'hour']])
     changping_dt['date'] = pd.to_datetime(changping_dt[['year', 'month', 'day', 'hour']])
     dingling_dt['date'] = pd.to_datetime(dingling_dt[['year', 'month', 'day', 'hour']])
