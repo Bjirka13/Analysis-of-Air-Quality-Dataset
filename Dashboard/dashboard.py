@@ -54,7 +54,10 @@ def main():
     filtered_dingling = dingling_dt[(dingling_dt['date'] >= pd.to_datetime(date_range[0])) &
                                       (dingling_dt['date'] <= pd.to_datetime(date_range[1]))]
 
+
+    
     # Di antara ketiga kota tersebut, kota mana yang memiliki distribusi polutan O3 tertinggi?
+    st.subheader("Pengaruh Perubahan Suhu terhadap CO dan O3")
     if 'Aotizhongxin' in selected_region and 'Changping' in selected_region and 'Dingling' in selected_region:
         fig, ax = plt.subplots(figsize=(12, 6))
         sns.histplot(dingling_dt['O3'], bins=20, color='red', label='Dingling', kde=True, ax=ax)
@@ -65,6 +68,8 @@ def main():
         ax.set_ylabel('Frekuensi')
         ax.legend()
         st.pyplot(fig)
+
+
 
     # Bagaimana pengaruh TEMP terhadap konsentrasi polutan CO dan O3 pada kota Dingling?
     st.subheader("Pengaruh Perubahan Suhu terhadap CO dan O3")
@@ -78,6 +83,8 @@ def main():
     ax.grid()
     st.pyplot(fig)
 
+
+    
     # Bagaimana pengaruh RAIN terhadap konsentrasi polutan PM10 dan PM2.5 pada kota Aotizhongxin?
     st.subheader("Pengaruh Curah Hujan terhadap PM10 dan PM2.5")
     fig, ax = plt.subplots(figsize=(12, 6))
