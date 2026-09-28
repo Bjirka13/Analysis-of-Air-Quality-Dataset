@@ -1,0 +1,41 @@
+RAW_COLUMNS = {
+    "No",
+    "year",
+    "month",
+    "day",
+    "hour",
+    "PM2.5",
+    "PM10",
+    "SO2",
+    "NO2",
+    "CO",
+    "O3",
+    "TEMP",
+    "PRES",
+    "DEWP",
+    "RAIN",
+    "wd",
+    "WSPM",
+    "station",
+}
+POLLUTANT_COLUMNS = ["PM2.5", "PM10", "SO2", "NO2", "CO", "O3"]
+WEATHER_COLUMNS = ["TEMP", "PRES", "DEWP", "RAIN", "wd", "WSPM"]
+MEASUREMENT_COLUMNS = POLLUTANT_COLUMNS + WEATHER_COLUMNS
+WIND_DIRECTIONS = {
+    "N",
+    "NNE",
+    "NE",
+    "ENE",
+    "E",
+    "ESE",
+    "SE",
+    "SSE",
+    "S",
+    "SSW",
+    "SW",
+    "WSW",
+    "W",
+    "WNW",
+    "NW",
+    "NNW",
+}

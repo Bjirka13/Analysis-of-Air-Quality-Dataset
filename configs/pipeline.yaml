@@ -1,0 +1,3 @@
+paths:
+  raw_data: data/raw
+  warehouse: data/processed/air_quality.duckdb
