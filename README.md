@@ -53,11 +53,6 @@ Gunakan Python lokal yang sudah terpasang. Install dependency proyek, termasuk D
 python -m pip install -r requirements.txt
 ```
 
-Untuk memasang package dalam mode editable:
-
-```powershell
-python -m pip install -e .
-```
 
 Jalankan ETL dari root proyek:
 
